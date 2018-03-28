@@ -1,2 +1,2 @@
-# journal
-每日的学习日志记录
+# journal and books
+> 学习日志，和一些pdf书籍

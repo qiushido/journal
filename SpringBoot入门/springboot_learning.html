@@ -1,0 +1,1071 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><style>#right-panel {
+    background-color: #fff;
+}
+
+#right-panel .cover-top {
+    background: linear-gradient(to bottom, #fff 50%, transparent);
+}
+
+#cover-bottom #cover-bottom-background-right {
+    background: #fff;
+}
+
+@font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+#container {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #373737;
+  font-family: "Roboto", "Noto Sans", "Ubuntu", "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif, "Noto Sans CJK SC", "Source Han Sans SC", "Microsoft Yahei";
+  font-size: 16px;
+  line-height: 2;
+  word-wrap: break-word;
+  background-color: #fff;
+  margin-left:100px;
+  margin-right:100px;
+}
+
+#container a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+#container a:active,
+#container a:hover {
+  outline-width: 0;
+}
+
+#container strong {
+  font-weight: inherit;
+}
+
+#container strong {
+  font-weight: bolder;
+}
+
+#container h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+#container img {
+  border-style: none;
+}
+
+#container svg:not(:root) {
+  overflow: hidden;
+}
+
+#container code,
+#container kbd,
+#container pre {
+  font-family: "Roboto Mono", "Ubuntu Mono", "Menlo", "Consolas", monospace;
+  font-size: 1em;
+}
+
+#container hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+#container input {
+  font: inherit;
+  margin: 0;
+}
+
+#container input {
+  overflow: visible;
+}
+
+#container button:-moz-focusring,
+#container [type="button"]:-moz-focusring,
+#container [type="reset"]:-moz-focusring,
+#container [type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+#container [type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+#container table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+#container td,
+#container th {
+  padding: 0;
+}
+
+#container * {
+  box-sizing: border-box;
+}
+
+#container input {
+  font: 13px/1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#container a {
+  color: #4078c0;
+  text-decoration: none;
+}
+
+#container a:hover,
+#container a:active {
+  text-decoration: underline;
+}
+
+#container hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+#container hr::before {
+  display: table;
+  content: "";
+}
+
+#container hr::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+#container h1,
+#container h2,
+#container h3,
+#container h4,
+#container h5,
+#container h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+#container h1 {
+  font-size: 30px;
+}
+
+#container h2 {
+  font-size: 21px;
+}
+
+#container h3 {
+  font-size: 16px;
+}
+
+#container h4 {
+  font-size: 14px;
+}
+
+#container h5 {
+  font-size: 12px;
+}
+
+#container h6 {
+  font-size: 11px;
+}
+
+#container p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#container blockquote {
+  margin: 0;
+}
+
+#container ul,
+#container ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#container ol ol,
+#container ul ol {
+  list-style-type: lower-roman;
+}
+
+#container ul ul ol,
+#container ul ol ol,
+#container ol ul ol,
+#container ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+#container dd {
+  margin-left: 0;
+}
+
+#container code {
+  font-family: "Roboto Mono", "Ubuntu Mono", "Menlo", "Consolas", monospace;
+  font-size: 12px;
+}
+
+#container pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px "Roboto Mono", "Ubuntu Mono", "Menlo", "Consolas", monospace;
+}
+
+#container .pl-0 {
+  padding-left: 0 !important;
+}
+
+#container .pl-1 {
+  padding-left: 3px !important;
+}
+
+#container .pl-2 {
+  padding-left: 6px !important;
+}
+
+#container .pl-3 {
+  padding-left: 12px !important;
+}
+
+#container .pl-4 {
+  padding-left: 24px !important;
+}
+
+#container .pl-5 {
+  padding-left: 36px !important;
+}
+
+#container .pl-6 {
+  padding-left: 48px !important;
+}
+
+#container .form-select::-ms-expand {
+  opacity: 0;
+}
+
+#container:before {
+  display: table;
+  content: "";
+}
+
+#container:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+#container>*:first-child {
+  margin-top: 0 !important;
+}
+
+#container>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+#container a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+#container .anchor {
+  display: inline-block;
+  padding-right: 2px;
+  margin-left: -18px;
+}
+
+#container .anchor:focus {
+  outline: none;
+}
+
+#container h1,
+#container h2,
+#container h3,
+#container h4,
+#container h5,
+#container h6 {
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+#container h1 .octicon-link,
+#container h2 .octicon-link,
+#container h3 .octicon-link,
+#container h4 .octicon-link,
+#container h5 .octicon-link,
+#container h6 .octicon-link {
+  color: #000;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+#container h1:hover .anchor,
+#container h2:hover .anchor,
+#container h3:hover .anchor,
+#container h4:hover .anchor,
+#container h5:hover .anchor,
+#container h6:hover .anchor {
+  text-decoration: none;
+}
+
+#container h1:hover .anchor .octicon-link,
+#container h2:hover .anchor .octicon-link,
+#container h3:hover .anchor .octicon-link,
+#container h4:hover .anchor .octicon-link,
+#container h5:hover .anchor .octicon-link,
+#container h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+#container h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+#container h1 .anchor {
+  line-height: 1;
+}
+
+#container h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+#container h2 .anchor {
+  line-height: 1;
+}
+
+#container h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+#container h3 .anchor {
+  line-height: 1.2;
+}
+
+#container h4 {
+  font-size: 1.25em;
+}
+
+#container h4 .anchor {
+  line-height: 1.2;
+}
+
+#container h5 {
+  font-size: 1em;
+}
+
+#container h5 .anchor {
+  line-height: 1.1;
+}
+
+#container h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+#container h6 .anchor {
+  line-height: 1.1;
+}
+
+#container p,
+#container blockquote,
+#container ul,
+#container ol,
+#container dl,
+#container table,
+#container pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+#container hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+#container ul,
+#container ol {
+  padding-left: 2em;
+}
+
+#container ul ul,
+#container ul ol,
+#container ol ol,
+#container ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#container li>p {
+  margin-top: 16px;
+}
+
+#container dl {
+  padding: 0;
+}
+
+#container dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#container dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+#container blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+#container blockquote>:first-child {
+  margin-top: 0;
+}
+
+#container blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+#container table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+#container table th {
+  font-weight: bold;
+}
+
+#container table th,
+#container table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+#container table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+#container table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+#container img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+#container code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+#container code:before,
+#container code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+#container pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+#container .highlight {
+  margin-bottom: 16px;
+}
+
+#container .highlight pre,
+#container pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+#container .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+#container pre {
+  word-wrap: normal;
+}
+
+#container pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+#container pre code:before,
+#container pre code:after {
+  content: normal;
+}
+
+#container kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+#container .pl-c {
+  color: #969896;
+}
+
+#container .pl-c1,
+#container .pl-s .pl-v {
+  color: #0086b3;
+}
+
+#container .pl-e,
+#container .pl-en {
+  color: #795da3;
+}
+
+#container .pl-s .pl-s1,
+#container .pl-smi {
+  color: #333;
+}
+
+#container .pl-ent {
+  color: #63a35c;
+}
+
+#container .pl-k {
+  color: #a71d5d;
+}
+
+#container .pl-pds,
+#container .pl-s,
+#container .pl-s .pl-pse .pl-s1,
+#container .pl-sr,
+#container .pl-sr .pl-cce,
+#container .pl-sr .pl-sra,
+#container .pl-sr .pl-sre {
+  color: #183691;
+}
+
+#container .pl-v {
+  color: #ed6a43;
+}
+
+#container .pl-id {
+  color: #b52a1d;
+}
+
+#container .pl-ii {
+  background-color: #b52a1d;
+  color: #f8f8f8;
+}
+
+#container .pl-sr .pl-cce {
+  color: #63a35c;
+  font-weight: bold;
+}
+
+#container .pl-ml {
+  color: #693a17;
+}
+
+#container .pl-mh,
+#container .pl-mh .pl-en,
+#container .pl-ms {
+  color: #1d3e81;
+  font-weight: bold;
+}
+
+#container .pl-mq {
+  color: #008080;
+}
+
+#container .pl-mi {
+  color: #333;
+  font-style: italic;
+}
+
+#container .pl-mb {
+  color: #333;
+  font-weight: bold;
+}
+
+#container .pl-md {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+#container .pl-mi1 {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+#container .pl-mdr {
+  color: #795da3;
+  font-weight: bold;
+}
+
+#container .pl-mo {
+  color: #1d3e81;
+}
+
+#container kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px "Roboto Mono", "Ubuntu Mono", "Menlo", "Consolas", monospace;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+#container .full-commit .btn-outline:not(:disabled):hover {
+  color: #4078c0;
+  border: 1px solid #4078c0;
+}
+
+#container :checked+.radio-label {
+  position: relative;
+  z-index: 1;
+  border-color: #4078c0;
+}
+
+#container .octicon {
+  display: inline-block;
+  vertical-align: text-top;
+  fill: currentColor;
+}
+
+#container .task-list-item {
+  list-style-type: none;
+}
+
+#container .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+#container .task-list-item input {
+  margin: 0 0.2em 0.25em -1.6em;
+  vertical-align: middle;
+}
+
+#container hr {
+  border-bottom-color: #eee;
+}
+</style><style>/*
+
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #333;
+  background: #f8f8f8;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #998;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  color: #333;
+  font-weight: bold;
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+  color: #008080;
+}
+
+.hljs-string,
+.hljs-doctag {
+  color: #d14;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+  color: #900;
+  font-weight: bold;
+}
+
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-type,
+.hljs-class .hljs-title {
+  color: #458;
+  font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+  color: #000080;
+  font-weight: normal;
+}
+
+.hljs-regexp,
+.hljs-link {
+  color: #009926;
+}
+
+.hljs-symbol,
+.hljs-bullet {
+  color: #990073;
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #0086b3;
+}
+
+.hljs-meta {
+  color: #999;
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  background: #fdd;
+}
+
+.hljs-addition {
+  background: #dfd;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+</style></head><body id="container" class="export export-html"><span i="1"><h1 id="springboot-">SpringBoot 快速入门</h1>
+</span><span i="3"><pre><code>分享学习过程，暴露问题，收集意见经验更快进步
+</code></pre></span><span i="8"><blockquote>
+<span i="8"><h4 id="-">目录：</h4>
+</span><span i="9"><ul>
+<li><span i="9">什么是SpringBoot？  </span></li>
+<li><span i="10">准备应用环境  </span></li>
+<li><span i="11">MVC及重要概念  </span></li>
+<li><span i="12">Mybatis持久层框架 </span></li>
+<li><span i="13">Thymeleaf模板引擎   </span></li>
+</ul>
+</span></blockquote>
+</span><span i="17"><h2 id="-spring-boot-">什么是Spring Boot？</h2>
+</span><span i="18"><p>SpringBoot是 Spring 家族中的一员<br>Spring Boot 就是对Spring各个组件配置进行打包的一款应用程序，使用它可以快速启动新的Spring应用开发，减少手动配置，需要的仍然是Spring框架知识。  </p>
+</span><span i="21"><center>
+<img src="http://www.yiibai.com/uploads/images/201701/03/557150107_51249.jpg" alt="SpringBoot">
+</center>  
+
+</span><span i="25"><h2 id="-">准备应用环境</h2>
+</span><span i="26"><ul>
+<li><span i="26">java环境（7+）</span></li>
+<li><span i="27">Maven  </span></li>
+<li><span i="28">IDE  </span></li>
+<li><span i="29"><a href="http://blog.csdn.net/he90227/article/details/53308222">Eclipse插件安装使用教程：STS (Spring Tool Suite)</a>  </span></li>
+<li><span i="30">SpringBoot框架依赖打包：www.start.spring.io （打包时勾选DevTool，当使用Thymeleaf模板时可以即时调试）  </span></li>
+<li><span i="31">SpringBoot使用注解的方式逐渐取代XML配置文件   </span></li>
+</ul>
+</span><span i="34"><h2 id="mvc-">MVC及重要概念</h2>
+</span><span i="35"><ul>
+<li><span i="35"><h4 id="mvc-model-view-controller-">MVC (Model-View-Controller)</h4>
+</span><span i="38">  MVC是Web开发中的重要概念<br><center><br><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1521690343115&amp;di=c81316deea32e6167de20c0b9255ff44&amp;imgtype=0&amp;src=http%3A%2F%2Fimages.cnitblog.com%2Fblog%2F191097%2F201307%2F17122850-e60fd55ef7ed48679f6785aa3ff80082.png" alt="mvc图"></center>  </span><span i="39"><ul>
+<li><span i="39">Model（模型）是应用程序中用于处理应用程序数据逻辑的部分。通常模型对象负责在数据库中存取数据。  </span></li>
+<li><span i="40">View（视图）是应用程序中处理数据显示的部分。通常视图是依据模型数据创建的。</span></li>
+<li><span i="41">Controller（控制器）是应用程序中处理用户交互的部分。通常控制器负责从视图读取数据，控制用户输入，并向模型发送数据。  </span></li>
+<li><span i="42">依据MVC设计框架解耦功能，让设计系统的结构、功能更清晰，更容易扩展及重用。掌握mvc框架模式我认为可以更容易写出好维护的大型项目，MVC的概念掌握好以后，可以在不同语言不同框架中轻松游走。</span></li>
+</ul>
+</span></li>
+<li><span i="43"><h4 id="-aop-">重要概念：AOP面向切面编程</h4>
+</span><span i="44"><ul>
+<li><span i="44">MVC是基本模式，在SpringBoot框架中除了M-V-C层以为，还有服务层、安全层、工具层等，在多个服务层中抽取公共类似的功能点，作为切点，将剥离的切面服务从合适的时机引入服务层。简单描述就是切面层可以服务于多个服务层。可以实现多切面，多服务层。拦截器、过滤器的应用基于AOP思想。  </span><span i="45"><center><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1521690410529&amp;di=fc7521c693c834b07cd93e6e12ba5b5b&amp;imgtype=0&amp;src=http%3A%2F%2Fimages2015.cnblogs.com%2Fblog%2F468725%2F201508%2F468725-20150831100452169-1977975177.png" alt="AOP">  </center>
+</span></li>
+</ul>
+</span></li>
+<li><span i="46"><h4 id="-ioc-di-">重要概念：IOC控制反转 和 DI依赖注入</h4>
+</span><span i="47"><p></p><center><img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=574837388,2822180527&amp;fm=27&amp;gp=0.jpg" alt="IOC"></center><p></p>
+</span><span i="48"><ul>
+<li><span i="48">基于java反射原理实现，将创建对象的权利交给框架。举一个网上易懂的例子：如果一个人想找一个合适的伴侣，可能会自己去网上查异性的资料，搜集信息，自己梳理成为另一半的要求、安排见面等等，这种操作是直接联系的，想找伴侣就要自己设计要求，自己选找可能的对象，自己去判断每一个可能的人。而如果通过婚姻介绍所，婚姻介绍所里注册了很多有需求的人，当一个人想要寻找合适的伴侣的时候只需要提出自己的要求，婚介所按照要求去寻找合适的对象来安排，这样婚介所接管了寻找对象的权利，而婚介所就相当于spring框架，在有需要的时候创建所需要的方法，提供使用，此即为IOC控制反转。spring提供所需要的对象的时候所用的手段即为DI，依赖注入。</span></li>
+</ul>
+</span></li>
+<li><span i="49"><h5 id="model-">Model模型层</h5>
+</span><span i="50"><ul>
+<li><span i="50">模型，是对于数据操作而言的，程序服务势必需要数据操作。通过建立数据模型来实现对数据库中数据的对应，模型对象的建立需要模型类的字段与数据表中的字段一致。</span></li>
+</ul>
+</span></li>
+<li><span i="51"><h5 id="dao-dataaccessobject-">DAO(DataAccessObject数据访问对象)数据持久化层</h5>
+</span><span i="52"><ul>
+<li><span i="52">用@Mapper注解的一层，访问数据库的接口层，通过dao层访问数据库，将访问返回的数据放入数据Model中，实现从sql到服务的调用。Model和DA0同属于数据处理层，Mybatis持久层框架，简化了数据操作，尽量的避免了JDBC的代码和很多的参数设置，每个MyBatis应用程序主要都是使用SqlSessionFactory实例的，一个SqlSessionFactory实例可以通过SqlSessionFactoryBuilder获得。SqlSessionFactoryBuilder可以从一个xml配置文件或者一个预定义的配置类的实例获得。通过在接口方法上使用sql注解的方式，已经可以省去xml映射文件，和SqlSessionFactory的构建过程。  </span></li>
+</ul>
+</span></li>
+<li><span i="53"><h5 id="controller-">Controller控制层</h5>
+</span><span i="54"><ul>
+<li><span i="54">@Controller注解的控制层，<em><code>控制web访问的路由信息</code></em>，根据controller设定的路由访问服务会返回特定的方法，调用特定的服务。Http请求响应参数在这一层与前端页面传入结合，通过模板引擎获取用户输入的数据与返回用户请求的数据,<em><code>传递接收参数</code></em>。  </span></li>
+<li><span i="56">@RestController和@Controller的区别？<br>@RestController注解相当于@ResponseBody ＋ @Controller合在一起的作用。@ResponseBody返回类型为json。如果需要渲染前端页面要用@Controller。  </span></li>
+<li><span i="57">@RequestMapping("/")  </span></li>
+<li><span i="58">@GetMapping("/")</span></li>
+<li><span i="59">@PostMapping("/")    </span></li>
+</ul>
+</span></li>
+<li><span i="60"><h5 id="view-">View视图层</h5>
+</span><span i="61"><ul>
+<li><span i="61">使用Thymeleaf模板渲染引擎，resources中的static和templates中的页面是提供的渲染模板。至于如何有好的视图效果要深入Thymeleaf模板学习才知道。  </span></li>
+<li><span i="62">视图的渲染基本逃不开数据参数，参数的传递都是通过controller控制层，通过对象的形式传入传出参数。  </span></li>
+</ul>
+</span></li>
+<li><span i="63"><h5 id="services-">Services服务层</h5>
+</span><span i="64"><ul>
+<li><span i="64">提供具体业务逻辑的处理办法，包含两部分具体业务的服务接口和接口的实现</span></li>
+</ul>
+</span></li>
+<li><span i="65"><h5 id="interceptor-">Interceptor拦截器</h5>
+</span><span i="66"><ul>
+<li><span i="66">拦截器，相当于一个切面，对于一些注册登录相关的权限管理需要拦截器来过滤一些请求访问，简单的拦截器分为两部分，一为拦截方法，二为拦截器策略  </span></li>
+</ul>
+</span></li>
+</ul>
+</span><span i="69"><pre><code class="lang-java"><span class="hljs-comment">//拦截器方法</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BaseInterceptor</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">HandlerInterceptor</span> </span>{
+    <span class="hljs-comment">//Logger logger = LoggerFactory.getLogger(BaseInterceptor.class);</span>
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">preHandle</span><span class="hljs-params">(HttpServletRequest request, HttpServletResponse response, Object handler)</span>
+            <span class="hljs-keyword">throws</span> Exception </span>{
+
+   }
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">postHandle</span><span class="hljs-params">(HttpServletRequest request, HttpServletResponse response, Object handler,
+            ModelAndView modelAndView)</span> <span class="hljs-keyword">throws</span> Exception </span>{
+        <span class="hljs-comment">// TODO Auto-generated method stub</span>
+
+    }
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">afterCompletion</span><span class="hljs-params">(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex)</span>
+            <span class="hljs-keyword">throws</span> Exception </span>{
+        <span class="hljs-comment">// TODO Auto-generated method stub</span>
+
+    }
+</code></pre>
+</span><span i="93"><pre><code class="lang-java"><span class="hljs-comment">//拦截器配置策略</span>
+
+<span class="hljs-meta">@Configuration</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WebConfig</span>  <span class="hljs-keyword">extends</span> <span class="hljs-title">WebMvcConfigurerAdapter</span>  </span>{
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addResourceHandlers</span><span class="hljs-params">(ResourceHandlerRegistry registry)</span> </span>{
+        registry.addResourceHandler(<span class="hljs-string">"/static/**"</span>).addResourceLocations(<span class="hljs-string">"classpath:/static/"</span>);
+        <span class="hljs-keyword">super</span>.addResourceHandlers(registry);
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addInterceptors</span><span class="hljs-params">(InterceptorRegistry registry)</span> </span>{
+        registry.addInterceptor(<span class="hljs-keyword">new</span> BaseInterceptor()).addPathPatterns(<span class="hljs-string">"/admin/**"</span>,<span class="hljs-string">"/User/**"</span>)
+                                                        .excludePathPatterns(<span class="hljs-string">"/"</span>);
+        <span class="hljs-keyword">super</span>.addInterceptors(registry);
+    }
+}
+</code></pre>
+</span><span i="115"><ul>
+<li><span i="115"><h5 id="resources-application-properties">resources中的application.properties</h5>
+</span><span i="116"><ul>
+<li><span i="116">一些配置可以在里面加如springMVC的web访问等，不局限于此，可用时添加  </span></li>
+</ul>
+</span></li>
+</ul>
+</span><span i="119"><pre><code><span class="hljs-comment">//mysql和thymeleaf的配置文件</span>
+# thymeleaf 
+<span class="hljs-keyword">spring</span>.thymeleaf.prefix=classpath:/templates/
+<span class="hljs-keyword">spring</span>.thymeleaf.suffix=.html  
+<span class="hljs-keyword">spring</span>.thymeleaf.mode=HTML5  
+<span class="hljs-keyword">spring</span>.thymeleaf.encoding=UTF<span class="hljs-number">-8</span>  
+<span class="hljs-keyword">spring</span>.thymeleaf.content-type=<span class="hljs-keyword">text</span>/html    
+<span class="hljs-keyword">spring</span>.thymeleaf.cache=false 
+#Config MySQL Connect Info
+<span class="hljs-keyword">spring</span>.datasource.url=jdbc:mysql:<span class="hljs-comment">//127.0.0.1:3306/UserDB?useSSL=false</span>
+<span class="hljs-keyword">spring</span>.datasource.username=root
+<span class="hljs-keyword">spring</span>.datasource.password=xuexi123
+<span class="hljs-keyword">spring</span>.datasource.driver-class-name=com.mysql.jdbc.Driver
+</code></pre></span><span i="135"><ul>
+<li><span i="135"><h5 id="-pom-xml">资源依赖pom.xml</h5>
+</span><span i="136">maven自动检查此文件中的加入的依赖信息，自动拉取jar包到项目中  </span></li>
+<li><span i="137"><h5 id="-">简单工程的文件结构</h5>
+</span><span i="138"><p></p><center><img src="http://www.qiushi.today/img/fileFramework.png" alt="简单工程的文件结构"></center><p></p>
+</span><span i="139"><h2 id="thymeleaf-">Thymeleaf模板引擎</h2>
+</span><span i="140"><blockquote>
+<span i="142"><p>模板引擎的作用？<br>可以帮助程序实现用户界面与业务数据分离，业务代码与逻辑代码的分离，提升开发效率，还利于代码重用。<br>在反馈前端页面的时候将数据模型应用到视图渲染  </p>
+</span></blockquote>
+</span><span i="149"><p>  模板引入配置:<br>  1.application.properties文件配置<br>  2.@controller控制器设置<br>  3.模板html页面放在/src/resources/templates/<br>  4.静态资源放于/src/resources/static/</p>
+</span></li>
+<li><span i="150">application.properties配置文件</span><span i="151"><pre><code>  spring<span class="hljs-selector-class">.thymeleaf</span><span class="hljs-selector-class">.prefix</span>=classpath:/templates/（位于/src/resources/下面）
+  spring<span class="hljs-selector-class">.thymeleaf</span><span class="hljs-selector-class">.suffix</span>=<span class="hljs-selector-class">.html</span>  
+  spring<span class="hljs-selector-class">.thymeleaf</span><span class="hljs-selector-class">.mode</span>=HTML5  
+  spring<span class="hljs-selector-class">.thymeleaf</span><span class="hljs-selector-class">.encoding</span>=UTF-<span class="hljs-number">8</span>  
+  spring<span class="hljs-selector-class">.thymeleaf</span><span class="hljs-selector-class">.content-type</span>=text/<span class="hljs-selector-tag">html</span>    
+  spring<span class="hljs-selector-class">.thymeleaf</span><span class="hljs-selector-class">.cache</span>=false
+</code></pre></span></li>
+<li><span i="158">模板使用中可能遇到的问题  </span><span i="159"><ul>
+<li><span i="159">Mapping for /error:  </span><span i="160"><pre><code>This application has <span class="hljs-keyword">no</span> explicit mapping <span class="hljs-keyword">for</span> /<span class="hljs-keyword">error</span>, <span class="hljs-keyword">so</span> you are seeing this  
+</code></pre></span><span i="161">文件层次结构问题  </span><span i="162"><pre><code><span class="hljs-built_in">application</span>启动类需要和其他层至于同一目录
+即<span class="hljs-built_in">application</span>启动类/Models/Service/dao/Controller同一级
+</code></pre></span></li>
+</ul>
+</span></li>
+</ul>
+</span><span i="168"><h2 id="mybatis-">Mybatis 数据库操作　　</h2>
+</span><span i="169"><h4 id="-mybatis-">什么是 MyBatis ？</h4>
+</span><span i="170"><blockquote>
+<span i="170"><p>MyBatis 是一款优秀的<em>持久层框架</em>，它支持定制化 SQL、存储过程以及高级映射。MyBatis <em>避免了几乎所有的 JDBC 代码和手动设置参数以及获取结果集</em>。<br>MyBatis 可以使用简单的<em><code>XML</code></em> 或<em><code>注解</code></em>来配置和映射原生信息，将接口和 Java 的 POJOs(Plain Old Java Objects,普通的 Java对象)映射成数据库中的记录。  </p>
+</span></blockquote>
+</span><span i="173"><h5 id="mybatis-">Mybatis主要设计到两层结构</h5>
+</span><span i="174"><ul>
+<li><span i="174"><p>DAO层：</p>
+</span><span i="175"><ul>
+<li><span i="176">interface接口层，配合数据库操作，提供数据库CRUD操作接口<br>使用@Mapper注解。不使用可能会遇到如下启动错误：  </span><span i="177"><pre><code>Description:  
+Field userMapper <span class="hljs-keyword">in</span> com<span class="hljs-selector-class">.UnionPay</span><span class="hljs-selector-class">.UserManageSys</span><span class="hljs-selector-class">.Controller</span><span class="hljs-selector-class">.UserController</span> required <span class="hljs-selector-tag">a</span> bean of type <span class="hljs-string">'com.UnionPay.UserManageSys.dao.UserMapper'</span> that could not be found.
+Action:  
+Consider defining <span class="hljs-selector-tag">a</span> bean of type <span class="hljs-string">'com.UnionPay.UserManageSys.dao.UserMapper'</span> <span class="hljs-keyword">in</span> your configuration.
+</code></pre></span></li>
+</ul>
+</span></li>
+<li><span i="183"><p>Model层：     </p>
+</span><span i="184"><ul>
+<li><span i="185">XML映射文件：（如果在Mapper中配置方法，简单方法可省略此文件）<br>取代XML方法，在Mapper注解的数据库操作接口中，使用注解方式注解具体操作方法。</span></li>
+<li><span i="186">model：model类中的字段名需要和SQL表中字段相一致</span></li>
+</ul>
+</span></li>
+<li><span i="187"><p>configure配置方法有二：</p>
+</span><span i="188"><ul>
+<li><span i="188">application.prepties文件添加（推荐）</span><span i="189"><pre><code><span class="hljs-selector-id">#Config</span> MySQL Connect Info
+spring<span class="hljs-selector-class">.datasource</span><span class="hljs-selector-class">.url</span>=jdbc:mysql:<span class="hljs-comment">//127.0.0.1:3306/UserDB</span>
+spring<span class="hljs-selector-class">.datasource</span><span class="hljs-selector-class">.username</span>=root
+spring<span class="hljs-selector-class">.datasource</span><span class="hljs-selector-class">.password</span>=xuexi123
+spring<span class="hljs-selector-class">.datasource</span><span class="hljs-selector-class">.driver-class-name</span>=com<span class="hljs-selector-class">.mysql</span><span class="hljs-selector-class">.jdbc</span><span class="hljs-selector-class">.Driver</span>
+</code></pre></span></li>
+<li><span i="196">（不推荐） config.xml：放置于src/config/Configure.xml 
+配置文件如下：</span></li>
+</ul>
+</span><span i="199"><pre><code><span class="xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"UTF-8"</span><span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-meta">&lt;!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd"&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">configuration</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">typeAliases</span>&gt;</span>
+ //！对应模型的具体名称，需要和xml映射文件相同
+     <span class="hljs-tag">&lt;<span class="hljs-name">typeAlias</span> <span class="hljs-attr">alias</span>=<span class="hljs-string">"User"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"com.yiibai.mybatis.models.User"</span> /&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">typeAliases</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">environments</span> <span class="hljs-attr">default</span>=<span class="hljs-string">"development"</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">environment</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"development"</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">transactionManager</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"JDBC"</span> /&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">dataSource</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"POOLED"</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"driver"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"com.mysql.jdbc.Driver"</span> /&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"url"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"jdbc:mysql://127.0.0.1:3306/testdb"</span> /&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"username"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"root"</span> /&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"123456"</span> /&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">dataSource</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">environment</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">environments</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">mappers</span>&gt;</span>
+     <span class="hljs-comment">&lt;!-- xml 数据表与操作映射文件--&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">mapper</span> <span class="hljs-attr">resource</span>=<span class="hljs-string">"com/yiibai/mybatis/models/User.xml"</span> /&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">mappers</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">configuration</span>&gt;</span>
+```　　
+#### 与原生建立映射的两种配置方式：　　
++ XML配置方式：
+```  xml
+<span class="hljs-tag">&lt;<span class="hljs-name">mapper</span> <span class="hljs-attr">namespace</span>=<span class="hljs-string">"com.UnionPay.Models.UserMapper"</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"GetUserByID"</span> <span class="hljs-attr">parameterType</span>=<span class="hljs-string">"int"</span> <span class="hljs-attr">resultType</span>=<span class="hljs-string">"User"</span>&gt;</span>
+         select * from `user` where user_id = #</span><span class="hljs-template-variable">{user_id}</span><span class="xml">
+     <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"GetUserByName"</span> <span class="hljs-attr">parameterType</span>=<span class="hljs-string">"String"</span> <span class="hljs-attr">resultType</span>=<span class="hljs-string">"User"</span>&gt;</span>
+         select * from `user` where user_name = #</span><span class="hljs-template-variable">{user_name}</span><span class="xml">
+     <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">mapper</span>&gt;</span></span>
+</code></pre></span><span i="236"><ul>
+<li><span i="236">注解方式：  </span><span i="237"><pre><code class="lang-java"><span class="hljs-meta">@Mapper</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">UserMapper</span> </span>{
+<span class="hljs-comment">//获取用户模型的方法，通过用户名</span>
+<span class="hljs-comment">//!!! 是 `user` 不是 'user'</span>
+<span class="hljs-meta">@Select</span>(<span class="hljs-string">"select * from `user` where user_name = #{userName}"</span>)
+<span class="hljs-function"><span class="hljs-keyword">public</span> User <span class="hljs-title">getUserByName</span><span class="hljs-params">(String userName)</span></span>;
+</code></pre>
+</span></li>
+</ul>
+</span></li>
+</ul>
+</span><span i="246"><h4 id="-">多参数传入方法：</h4>
+</span><span i="247"><ul>
+<li><span i="247">DAO层函数方法：使用@Param()注解  </span><span i="248"><pre><code>  <span class="hljs-variable">@Insert</span>(<span class="hljs-string">"insert into `user`(user_name,user_pwd,user_authority) values (#{user_name},#{user_pwd},#{user_authority})"</span>)
+  public int addUser(<span class="hljs-variable">@Param</span>(<span class="hljs-string">"user_name"</span>)String user_name,<span class="hljs-variable">@Param</span>(<span class="hljs-string">"user_pwd"</span>)String user_pwd,<span class="hljs-variable">@Param</span>(<span class="hljs-string">"user_authority"</span>)int user_authority)
+</code></pre></span></li>
+</ul>
+</span></body>
+</html>
